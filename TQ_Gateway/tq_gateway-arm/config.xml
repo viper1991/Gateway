@@ -1,0 +1,48 @@
+<config>
+	<MQTT>
+		<connectionType>5</connectionType>
+		<mqttid>123</mqttid>
+		<host>192.168.1.232</host>
+		<port>1883</port>
+		<keepalive>1000</keepalive>
+		<subTopics>t1|t2</subTopics>
+		<topic>gateway/test</topic>
+	</MQTT>
+	
+	<adaptor id="0300110108130125">
+		<adaptorClass>/home/wenshidu.so</adaptorClass>
+		<timeout>2000</timeout>
+		<connectionType>3</connectionType>
+		<port>/dev/ttySAC1</port>
+		<boundrate>9600</boundrate>
+		<databit>8</databit>
+		<stopbit>1</stopbit>
+		<parity>0</parity>
+		<flowcontrol>0</flowcontrol>
+	</adaptor>
+	
+	<adaptor id="2004000050720004">
+		<adaptorClass>/home/shuiwei.so</adaptorClass>
+		<timeout>2000</timeout>
+		<connectionType>4</connectionType>
+		<address>1</address>
+	</adaptor>
+	
+	<adaptor id="0300110103700047">
+		<adaptorClass>/home/guangzhao.so</adaptorClass>
+		<timeout>2000</timeout>
+		<connectionType>4</connectionType>
+		<address>2</address>
+	</adaptor>
+	
+	<rs485>
+		<port>/dev/ttySAC2</port>
+		<boundrate>9600</boundrate>
+		<databit>8</databit>
+		<stopbit>1</stopbit>
+		<parity>0</parity>
+		<flowcontrol>0</flowcontrol>
+		<interval>500</interval>
+	</rs485>
+	
+</config>

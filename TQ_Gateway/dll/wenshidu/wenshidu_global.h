@@ -1,0 +1,12 @@
+#ifndef WENSHIDU_GLOBAL_H
+#define WENSHIDU_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(WENSHIDU_LIBRARY)
+#  define WENSHIDUSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define WENSHIDUSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // WENSHIDU_GLOBAL_H

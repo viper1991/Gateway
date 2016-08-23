@@ -1,0 +1,12 @@
+#ifndef GUANGZHAO_GLOBAL_H
+#define GUANGZHAO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(GUANGZHAO_LIBRARY)
+#  define GUANGZHAOSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define GUANGZHAOSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // GUANGZHAO_GLOBAL_H
